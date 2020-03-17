@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Weather</title>
+</head>
+
+<body>
+    <h1>Enter the city you want to check the weather in:</h1>
+    <form action="/" method="POST">
+        <label for="city">City:</label>
+        <input name="city" type="text" placeholder="city name">
+        <button name="submit">Submit</button>
+    </form>
+    <div class="container">
+        <h3><%= description %></h3>
+        <h3><%= temperature %></h3>
+        <h3><%= windspeed %></h3>
+    </div>
+    <img src="<%= imageURL %>" alt="">
+
+</body>
+</html>
